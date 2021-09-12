@@ -1,0 +1,28 @@
+{
+  "name": "k",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "./tools/build-layer.sh",
+    "predeploy": "npm run build",
+    "deploy": "sls deploy"
+  },
+  "dependencies": {
+    "lodash.add": "^3.7.0",
+    "lodash.divide": "^4.9.0",
+    "lodash.multiply": "^4.9.0",
+    "lodash.subtract": "^4.2.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.987.0",
+    "serverless": "^2.57.0",
+    "serverless-offline": "^8.1.0",
+    "serverless-webpack": "^5.5.4",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
